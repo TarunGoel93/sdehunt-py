@@ -1,13 +1,15 @@
-n = 1
+import math
 
-count = 0
+class Solution:
+    def print_divisors(self, N):
+        m = []
+        for i in range(1, int(math.sqrt(N)) + 1):
+            if N % i == 0:
+                m.append(i)
+                if i != N // i:
+                    m.append(N // i)
+        return sorted(m)
 
-for i in range(1,n+1,1):
-  if(n%i==0):
-    count+=1
-
-
-if(count==2):
-  print(True)
-else:
-  print(False)
+if __name__ == "__main__":
+    obj = Solution()
+    print(obj.print_divisors(36))
