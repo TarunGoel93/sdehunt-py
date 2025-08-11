@@ -1,9 +1,9 @@
-def star_pattern(n):
+def Right_Angled_Number_Pyramid(n):
   for i in range(1,n+1,1):
     for j in range(1,i+1,1):
       print(j,end="")
     print("")
 
-star_pattern(5)
+Right_Angled_Number_Pyramid(5)
 
 

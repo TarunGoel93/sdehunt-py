@@ -1,4 +1,4 @@
-def star_pattern(n):
+def Diamond_Star_Pattern(n):
 
   for i in range(1,n+1,1):
 
@@ -24,6 +24,6 @@ def star_pattern(n):
     print("")
 
 
-star_pattern(5)
+Diamond_Star_Pattern(5)
 
 
